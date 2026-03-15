@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://d1sqy384lu3q2"]
+
+[ext_resource type="Script" uid="uid://8rccbn761456" path="res://src/Game/game.gd" id="1_3s8ir"]
+[ext_resource type="FontFile" uid="uid://b2h4na8ul2x6y" path="res://assets/fonts/RebellionSquad-ZpprZ.ttf" id="1_k6qo2"]
+[ext_resource type="PackedScene" uid="uid://df2l777lq37gc" path="res://src/PlayerPaddle/player_paddle.tscn" id="2_sag4g"]
+[ext_resource type="PackedScene" uid="uid://cvirdfl7266w4" path="res://src/OpponentPaddle/opponent_paddle.tscn" id="3_sag4g"]
+[ext_resource type="PackedScene" uid="uid://bypy16g2j74la" path="res://src/Ball/ball.tscn" id="4_bob6j"]
+[ext_resource type="AudioStream" uid="uid://dwlbha5h1wphh" path="res://assets/sounds/Windows Hardware Insert.wav" id="6_0qd4d"]
+[ext_resource type="AudioStream" uid="uid://psw1xttow7wc" path="res://assets/sounds/Windows Hardware Remove.wav" id="7_mkl7w"]
+[ext_resource type="AudioStream" uid="uid://bea7og8d5vaeu" path="res://assets/sounds/Windows Ding.wav" id="8_drysr"]
+[ext_resource type="AudioStream" uid="uid://dh1w0c3kquduj" path="res://assets/sounds/Windows Error.wav" id="8_ysswf"]
+[ext_resource type="AudioStream" uid="uid://b7310do7rq7ak" path="res://assets/sounds/Windows Critical Stop.wav" id="9_ysswf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k6qo2"]
+size = Vector2(1152, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7m6cs"]
+size = Vector2(16, 632)
+
+[node name="Game" type="Node2D" unique_id=858443727]
+script = ExtResource("1_3s8ir")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1637006761]
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.20789331, 1.1431053e-07, 0.11348946, 1)
+
+[node name="PScore" type="Label" parent="." unique_id=1115508315]
+z_index = 2
+offset_right = 1088.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("1_k6qo2")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EScore" type="Label" parent="." unique_id=2081211805]
+z_index = 2
+offset_left = 64.0
+offset_right = 1152.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("1_k6qo2")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dash" type="Label" parent="." unique_id=445376324]
+z_index = 2
+offset_right = 1152.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("1_k6qo2")
+theme_override_font_sizes/font_size = 30
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TimerLabel" type="Label" parent="." unique_id=2115275455]
+visible = false
+z_index = 2
+offset_top = 64.0
+offset_right = 1152.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("1_k6qo2")
+theme_override_font_sizes/font_size = 30
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayerPaddle" parent="." unique_id=392674495 instance=ExtResource("2_sag4g")]
+position = Vector2(96, 320)
+
+[node name="OpponentPaddle" parent="." unique_id=817399805 instance=ExtResource("3_sag4g")]
+position = Vector2(1056, 320)
+
+[node name="TopBlock" type="StaticBody2D" parent="." unique_id=838104432]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopBlock" unique_id=425971826]
+position = Vector2(576, -8)
+shape = SubResource("RectangleShape2D_k6qo2")
+
+[node name="BottBlock" type="StaticBody2D" parent="." unique_id=1400681374]
+position = Vector2(0, 664)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottBlock" unique_id=2142213276]
+position = Vector2(576, -8)
+shape = SubResource("RectangleShape2D_k6qo2")
+
+[node name="Ball" parent="." unique_id=951128980 instance=ExtResource("4_bob6j")]
+position = Vector2(576, 320)
+
+[node name="PlayerGoal" type="Area2D" parent="." unique_id=1784720993]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerGoal" unique_id=644489430]
+position = Vector2(-8, 324)
+shape = SubResource("RectangleShape2D_7m6cs")
+
+[node name="EnemyGoal" type="Area2D" parent="." unique_id=1889228859]
+position = Vector2(1168, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyGoal" unique_id=1558724349]
+position = Vector2(-8, 324)
+shape = SubResource("RectangleShape2D_7m6cs")
+
+[node name="Timer" type="Timer" parent="." unique_id=2080054526]
+wait_time = 0.5
+one_shot = true
+
+[node name="GeneralAudioPlayer" type="AudioStreamPlayer" parent="." unique_id=324945947]
+
+[node name="LeftHit" type="AudioStreamPlayer" parent="." unique_id=1524472925]
+stream = ExtResource("6_0qd4d")
+
+[node name="RightHit" type="AudioStreamPlayer" parent="." unique_id=1597347549]
+stream = ExtResource("7_mkl7w")
+
+[node name="OtherHit" type="AudioStreamPlayer" parent="." unique_id=737798761]
+stream = ExtResource("8_ysswf")
+
+[node name="LeftScore" type="AudioStreamPlayer" parent="." unique_id=1598754855]
+stream = ExtResource("8_drysr")
+
+[node name="RightScore" type="AudioStreamPlayer" parent="." unique_id=2135664004]
+stream = ExtResource("9_ysswf")
+
+[connection signal="body_entered" from="PlayerGoal" to="." method="_on_player_goal_body_entered"]
+[connection signal="body_entered" from="EnemyGoal" to="." method="_on_enemy_goal_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

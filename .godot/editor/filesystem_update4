@@ -1,0 +1,10 @@
+res://src/playerPaddle/player_paddle.tscn
+res://src/PlayerPaddle/player_paddle.tscn
+res://src/PlayerPaddle/player_paddle.gd
+res://game.tscn
+res://src/Game/game.tscn
+res://src/OpponentPaddle/opponent_paddle.tscn
+res://src/Ball/ball.tscn
+res://src/Ball/ball.gd
+res://src/OpponentPaddle/opponent_paddle.gd
+res://src/Game/game.gd

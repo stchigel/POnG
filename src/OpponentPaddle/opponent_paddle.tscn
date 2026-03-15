@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cvirdfl7266w4"]
+
+[ext_resource type="Script" uid="uid://b1asgfqeqtrs1" path="res://src/OpponentPaddle/opponent_paddle.gd" id="1_nafsa"]
+[ext_resource type="Texture2D" uid="uid://ci6l5ukg08wsd" path="res://assets/img/paddles/redPaddle.png" id="1_nv3js"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nafsa"]
+size = Vector2(32, 128)
+
+[node name="OpponentPaddle" type="CharacterBody2D" unique_id=817399805]
+script = ExtResource("1_nafsa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=631592318]
+position = Vector2(-6.103516e-06, 0.5818162)
+scale = Vector2(0.075000025, 0.10090909)
+texture = ExtResource("1_nv3js")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1493136769]
+scale = Vector2(0.9913793, 1.0085471)
+shape = SubResource("RectangleShape2D_nafsa")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bea7og8d5vaeu"
+path="res://.godot/imported/Windows Ding.wav-41d97bb966f4de44110d1e2403bdabd1.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Windows Ding.wav"
+dest_files=["res://.godot/imported/Windows Ding.wav-41d97bb966f4de44110d1e2403bdabd1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
