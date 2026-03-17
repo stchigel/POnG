@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nafsa"]
 size = Vector2(32, 128)
 
-[node name="OpponentPaddle" type="CharacterBody2D" unique_id=817399805]
+[node name="OpponentPaddle" type="CharacterBody2D" unique_id=817399805 groups=["RightPlayerGroup"]]
 script = ExtResource("1_nafsa")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=631592318]

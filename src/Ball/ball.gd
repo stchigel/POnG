@@ -1,5 +1,7 @@
 extends CharacterBody2D
-var speed = 600
+var startSpeed = 400
+var speed = startSpeed
+var isInWater = false
 
 func _ready():
 	randomize()
@@ -9,18 +11,21 @@ func _ready():
 func _physics_process(delta):
 	var collision_object = move_and_collide(velocity * speed * delta)
 	if collision_object:
-		velocity = velocity.bounce(collision_object.get_normal())
-		if collision_object.get_collider().name == "PlayerPaddle":
+		if collision_object.get_collider().is_in_group("LeftPlayerGroup"):
 			$"../LeftHit".play()
-		else: if collision_object.get_collider().name == "OpponentPaddle":
+			speed += 20
+		elif collision_object.get_collider().is_in_group("RightPlayerGroup"):
 			$"../RightHit".play()
+			speed += 20
 		else:
 			$"../OtherHit".play()
+			speed += 10
+		velocity = velocity.bounce(collision_object.get_normal())
 
 func stop_ball():
 	speed = 0
 	
 func restart_ball():
-	speed = 600
+	speed = startSpeed
 	velocity.x = [-1,1] [randi() % 2]
 	velocity.y = [-0.8,0.8] [randi() % 2]

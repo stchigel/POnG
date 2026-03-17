@@ -17,6 +17,8 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 [global_group]
 
 BallGroup=""
+LeftPlayerGroup=""
+RightPlayerGroup=""
 
 [input]
 
