@@ -5,7 +5,13 @@ var Player2Scene = preload("res://src/Player2Paddle/player_2_paddle.tscn")
 
 var PScore = 0
 var EScore = 0
-var Mode = true
+var mode = false
+var agua = false
+var sonido = false
+var colorLeft = 0
+var colorRight = 0
+
+var Mode = mode
 # true es VS IA, false es 1v1 local
 
 func _ready():
