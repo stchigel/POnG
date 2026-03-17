@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://d1sqy384lu3q2"]
 
 [ext_resource type="Script" uid="uid://8rccbn761456" path="res://src/Game/game.gd" id="1_3s8ir"]
-[ext_resource type="FontFile" uid="uid://b2h4na8ul2x6y" path="res://assets/fonts/RebellionSquad-ZpprZ.ttf" id="1_k6qo2"]
 [ext_resource type="PackedScene" uid="uid://df2l777lq37gc" path="res://src/PlayerPaddle/player_paddle.tscn" id="2_sag4g"]
-[ext_resource type="PackedScene" uid="uid://cvirdfl7266w4" path="res://src/OpponentPaddle/opponent_paddle.tscn" id="3_sag4g"]
+[ext_resource type="Texture2D" uid="uid://b5tnwylymuw2j" path="res://assets/img/back/minimalistic-blue-windows-7-screen-y1f3lbswydb71soy.jpg" id="2_ysswf"]
+[ext_resource type="FontFile" uid="uid://b865g8y23wk1f" path="res://assets/fonts/segoe-ui-4-cufonfonts/Segoe UI.ttf" id="4_4te78"]
 [ext_resource type="PackedScene" uid="uid://bypy16g2j74la" path="res://src/Ball/ball.tscn" id="4_bob6j"]
 [ext_resource type="AudioStream" uid="uid://dwlbha5h1wphh" path="res://assets/sounds/Windows Hardware Insert.wav" id="6_0qd4d"]
+[ext_resource type="Texture2D" uid="uid://b7yishcumq6xb" path="res://assets/img/6gfz2t.png" id="6_ysswf"]
 [ext_resource type="AudioStream" uid="uid://psw1xttow7wc" path="res://assets/sounds/Windows Hardware Remove.wav" id="7_mkl7w"]
 [ext_resource type="AudioStream" uid="uid://bea7og8d5vaeu" path="res://assets/sounds/Windows Ding.wav" id="8_drysr"]
 [ext_resource type="AudioStream" uid="uid://dh1w0c3kquduj" path="res://assets/sounds/Windows Error.wav" id="8_ysswf"]
@@ -14,24 +15,38 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k6qo2"]
 size = Vector2(1152, 16)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_drysr"]
+size = Vector2(1136, 32)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7m6cs"]
 size = Vector2(16, 632)
 
 [node name="Game" type="Node2D" unique_id=858443727]
 script = ExtResource("1_3s8ir")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1637006761]
-offset_right = 1152.0
-offset_bottom = 648.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-color = Color(0.20789331, 1.1431053e-07, 0.11348946, 1)
+[node name="Back" type="TextureRect" parent="." unique_id=174595997]
+offset_top = -32.0
+offset_right = 64.0
+offset_bottom = 7.5555534
+scale = Vector2(18, 18)
+texture = ExtResource("2_ysswf")
+expand_mode = 3
+
+[node name="Score" type="TextureRect" parent="." unique_id=1729450776]
+offset_left = 472.0
+offset_top = 8.0
+offset_right = 797.0
+offset_bottom = 158.0
+scale = Vector2(0.64, 0.64)
+texture = ExtResource("6_ysswf")
 
 [node name="PScore" type="Label" parent="." unique_id=1115508315]
 z_index = 2
+offset_top = 32.0
 offset_right = 1088.0
-offset_bottom = 64.0
-theme_override_fonts/font = ExtResource("1_k6qo2")
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_4te78")
 theme_override_font_sizes/font_size = 30
 text = "0"
 horizontal_alignment = 1
@@ -40,9 +55,11 @@ vertical_alignment = 1
 [node name="EScore" type="Label" parent="." unique_id=2081211805]
 z_index = 2
 offset_left = 64.0
+offset_top = 32.0
 offset_right = 1152.0
-offset_bottom = 64.0
-theme_override_fonts/font = ExtResource("1_k6qo2")
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_4te78")
 theme_override_font_sizes/font_size = 30
 text = "0"
 horizontal_alignment = 1
@@ -50,21 +67,11 @@ vertical_alignment = 1
 
 [node name="Dash" type="Label" parent="." unique_id=445376324]
 z_index = 2
+offset_top = 32.0
 offset_right = 1152.0
-offset_bottom = 64.0
-theme_override_fonts/font = ExtResource("1_k6qo2")
-theme_override_font_sizes/font_size = 30
-text = "-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TimerLabel" type="Label" parent="." unique_id=2115275455]
-visible = false
-z_index = 2
-offset_top = 64.0
-offset_right = 1152.0
-offset_bottom = 128.0
-theme_override_fonts/font = ExtResource("1_k6qo2")
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_4te78")
 theme_override_font_sizes/font_size = 30
 text = "-"
 horizontal_alignment = 1
@@ -72,9 +79,7 @@ vertical_alignment = 1
 
 [node name="PlayerPaddle" parent="." unique_id=392674495 instance=ExtResource("2_sag4g")]
 position = Vector2(96, 320)
-
-[node name="OpponentPaddle" parent="." unique_id=817399805 instance=ExtResource("3_sag4g")]
-position = Vector2(1056, 320)
+platform_floor_layers = 0
 
 [node name="TopBlock" type="StaticBody2D" parent="." unique_id=838104432]
 
@@ -88,6 +93,14 @@ position = Vector2(0, 664)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottBlock" unique_id=2142213276]
 position = Vector2(576, -8)
 shape = SubResource("RectangleShape2D_k6qo2")
+
+[node name="Taskbar" type="StaticBody2D" parent="." unique_id=1256978051]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Taskbar" unique_id=297457452]
+position = Vector2(576, 632)
+shape = SubResource("RectangleShape2D_drysr")
+disabled = true
 
 [node name="Ball" parent="." unique_id=951128980 instance=ExtResource("4_bob6j")]
 position = Vector2(576, 320)
@@ -113,12 +126,15 @@ one_shot = true
 
 [node name="LeftHit" type="AudioStreamPlayer" parent="." unique_id=1524472925]
 stream = ExtResource("6_0qd4d")
+volume_db = -5.0
 
 [node name="RightHit" type="AudioStreamPlayer" parent="." unique_id=1597347549]
 stream = ExtResource("7_mkl7w")
+volume_db = -5.0
 
 [node name="OtherHit" type="AudioStreamPlayer" parent="." unique_id=737798761]
 stream = ExtResource("8_ysswf")
+volume_db = -10.0
 
 [node name="LeftScore" type="AudioStreamPlayer" parent="." unique_id=1598754855]
 stream = ExtResource("8_drysr")

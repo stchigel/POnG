@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys5s7"]
 size = Vector2(32, 128)
 
-[node name="PlayerPaddle" type="CharacterBody2D" unique_id=392674495]
+[node name="PlayerPaddle" type="CharacterBody2D" unique_id=392674495 groups=["LeftPlayerGroup"]]
 script = ExtResource("1_ys5s7")
 metadata/_edit_group_ = true
 

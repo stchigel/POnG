@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://6od6xna4r8rm"]
+
+[ext_resource type="Texture2D" uid="uid://bvlnnvcpb07ja" path="res://assets/img/paddles/cyanPaddle.png" id="1_u1flu"]
+[ext_resource type="Script" uid="uid://b3ffow8atevew" path="res://src/Player2Paddle/player_2_paddle.gd" id="1_vxsd5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxsd5"]
+size = Vector2(32, 128)
+
+[node name="Player2Paddle" type="CharacterBody2D" unique_id=451635149 groups=["RightPlayerGroup"]]
+script = ExtResource("1_vxsd5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=538695267]
+position = Vector2(-6.103516e-06, 0.5818162)
+scale = Vector2(0.075000025, 0.10090909)
+texture = ExtResource("1_u1flu")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=186843231]
+scale = Vector2(0.9913793, 1.0085471)
+shape = SubResource("RectangleShape2D_vxsd5")

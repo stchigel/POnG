@@ -1,9 +1,20 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773538233
+::res://::1773783521
 ::res://assets/::1773540112
-::res://assets/fonts/::1773531516
+::res://assets/fonts/::1773586893
 RebellionSquad-ZpprZ.ttf::FontFile::4297754166212427738::1773450856::1773531516::1::::<><><>0<>0<>3061d9426ef6c1f95f621b7805d1bef1<>res://.godot/imported/RebellionSquad-ZpprZ.ttf-c3ae1ef9bd10af6b4a5e9a2dab63794e.fontdata::
-::res://assets/img/::1773531444
+::res://assets/fonts/segoe-ui-4-cufonfonts/::1773586893
+Segoe UI Bold Italic.ttf::FontFile::6978013071240593544::1773586893::1773586893::1::::<><><>0<>0<>3559d21f1e846d08a81508b72cd3c532<>res://.godot/imported/Segoe UI Bold Italic.ttf-047c1e1297ae946d9f383283b50942a5.fontdata::
+Segoe UI Bold.ttf::FontFile::3639560106154655742::1773586893::1773586893::1::::<><><>0<>0<>6d1e3d991df62d4d2a66d76205c3cf94<>res://.godot/imported/Segoe UI Bold.ttf-6ab44f8d5dc0409f9549b409fb343893.fontdata::
+Segoe UI Italic.ttf::FontFile::7144178024898024162::1773586893::1773586893::1::::<><><>0<>0<>0f640012f05724f79540c76cf8b758f2<>res://.godot/imported/Segoe UI Italic.ttf-929713904d81860161a62d5fa5d89748.fontdata::
+Segoe UI.ttf::FontFile::4768482230281357809::1773586893::1773586893::1::::<><><>0<>0<>a8a74bbfb1e5e2f49d31bea47c4be0e4<>res://.godot/imported/Segoe UI.ttf-338df1b29f1ca7fc8689f05977adc556.fontdata::
+::res://assets/img/::1773586192
+6gfz2t.png::CompressedTexture2D::4682526998118461643::1773586192::1773586192::1::::<><><>0<>0<>f178b4879ab8f5171e29e8ccce21b50d<>res://.godot/imported/6gfz2t.png-63b0267fab44f038b7b22120488c69fa.ctex::
+::res://assets/img/back/::1773585467
+aesthetic-blue-windows-7-logo-8ttjx2ybhml6isa2.webp::CompressedTexture2D::5977362174786801354::1773585332::1773585467::1::::<><><>0<>0<>58a2f8902d803e257de686f96443cc2e<>res://.godot/imported/aesthetic-blue-windows-7-logo-8ttjx2ybhml6isa2.webp-c5e5c9d052c36457cffeba18f55167de.ctex::
+minimalistic-blue-windows-7-screen-y1f3lbswydb71soy.jpg::CompressedTexture2D::4532139057193630743::1773585324::1773585467::1::::<><><>0<>0<>eb7d5a90d30f1e47a89d3243e54fa5df<>res://.godot/imported/minimalistic-blue-windows-7-screen-y1f3lbswydb71soy.jpg-5cfe79e8a987898fdfbbf87e034e46a0.ctex::
+win7defaultdesktop_1.png::CompressedTexture2D::5744872796419457091::1773585437::1773585467::1::::<><><>0<>0<>26f5045471268ea50e63718b147d609d<>res://.godot/imported/win7defaultdesktop_1.png-d1a57eaab2b5a88993c606d2ec90b91c.ctex::
+win7defaultdesktop_1.webp::CompressedTexture2D::5584937068069145771::1773585419::1773585467::1::::<><><>0<>0<>e3e61776d330a35d752facb67dd6a08f<>res://.godot/imported/win7defaultdesktop_1.webp-95dac78754733bcaaaa8215ee0b947c0.ctex::
 ::res://assets/img/balls/::1773531444
 blueBall.png::CompressedTexture2D::2501330331391215081::1773501493::1773531444::1::::<><><>0<>0<>7a126748d4678633c2ee4918dd30b089<>res://.godot/imported/blueBall.png-e32cc65e68e4e7657c10b0cb7804e962.ctex::
 greenBall.png::CompressedTexture2D::7734599774339528943::1773501468::1773531444::1::::<><><>0<>0<>5ab2e6b70d9fa049712eaf57aa93b269<>res://.godot/imported/greenBall.png-7b355e678328c81946de1c4098d047b6.ctex::
@@ -15,7 +26,7 @@ greenPaddle.png::CompressedTexture2D::913680344427473833::1773501213::1773531444
 lightgreenPaddle.png::CompressedTexture2D::8916512600691684453::1773501223::1773531444::1::::<><><>0<>0<>3a3320e11db015071578598891b22a4f<>res://.godot/imported/lightgreenPaddle.png-4218dfd5beb9199be4d3ef5aa390407c.ctex::
 redPaddle.png::CompressedTexture2D::5399070353826283287::1773501225::1773531444::1::::<><><>0<>0<>11db221ade17bce15ed5e9244026d6c9<>res://.godot/imported/redPaddle.png-a781728b2a33fb7fb36447cdd35df224.ctex::
 violetPaddle.png::CompressedTexture2D::5916718854817201348::1773501227::1773531444::1::::<><><>0<>0<>dc956c968d91c5f9b34c88a58cec8510<>res://.godot/imported/violetPaddle.png-1f45c65f72a2d75ee22ab5248a9ad97c.ctex::
-::res://assets/sounds/::1773540286
+::res://assets/sounds/::1773540313
 chord.wav::AudioStreamWAV::7096966733893502100::1244706026::1773540313::1::::<><><>0<>0<>5bca0552ecff8b7612cc40bc76f34950<>res://.godot/imported/chord.wav-3d6843fd81dff5d36d7b5e9a4754bc79.sample::
 Windows Critical Stop.wav::AudioStreamWAV::4691889724557990938::1244706030::1773540313::1::::<><><>0<>0<>6f421032da4bbb7ee852b3f300c5c820<>res://.godot/imported/Windows Critical Stop.wav-81c1c573f8e09d551be274bae88f1199.sample::
 Windows Ding.wav::AudioStreamWAV::2669144369424294468::1244706030::1773540313::1::::<><><>0<>0<>f2ee86cd9060714217825bc6ee838160<>res://.godot/imported/Windows Ding.wav-41d97bb966f4de44110d1e2403bdabd1.sample::
@@ -23,16 +34,21 @@ Windows Error.wav::AudioStreamWAV::7705638345617318429::1244706030::1773540313::
 Windows Exclamation.wav::AudioStreamWAV::5178102197882732087::1244706030::1773540313::1::::<><><>0<>0<>64231aa2513dabdd689cdeb68ca7857c<>res://.godot/imported/Windows Exclamation.wav-cacf9cc65c268ddffab1335ad5c454ec.sample::
 Windows Hardware Insert.wav::AudioStreamWAV::8726198030658581345::1244706030::1773540313::1::::<><><>0<>0<>dca9ebbded63896099643b3e60aa653e<>res://.godot/imported/Windows Hardware Insert.wav-a5c989b9a76fb03a8948bea6da21bbb7.sample::
 Windows Hardware Remove.wav::AudioStreamWAV::1091374896897172638::1244706030::1773540313::1::::<><><>0<>0<>c1813a3fe1a39209791cd7395053bd77<>res://.godot/imported/Windows Hardware Remove.wav-2d466011ce2158031e11d1ed198802a9.sample::
-::res://src/::1773534583
-::res://src/Ball/::1773538546
-ball.tscn::PackedScene::4103423874517453402::1773538350::0::1::::<><><>0<>0<><>::uid://digxy0357ebw6::::res://assets/img/balls/greenBall.png<>uid://btanwpebfl8n3::::res://src/Ball/ball.gd
-ball.gd::GDScript::3720838115269645986::1773538546::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://src/Game/::1773539789
-game.tscn::PackedScene::9022346639144697819::1773539789::0::1::::<><><>0<>0<><>::uid://8rccbn761456::::res://src/Game/game.gd<>uid://b2h4na8ul2x6y::::res://assets/fonts/RebellionSquad-ZpprZ.ttf<>uid://df2l777lq37gc::::res://src/PlayerPaddle/player_paddle.tscn<>uid://cvirdfl7266w4::::res://src/OpponentPaddle/opponent_paddle.tscn<>uid://bypy16g2j74la::::res://src/Ball/ball.tscn
-game.gd::GDScript::2351451341549651599::1773539774::0::1::::<>Node2D<><>0<>0<><>::
-::res://src/OpponentPaddle/::1773536683
-opponent_paddle.tscn::PackedScene::6264359933176973933::1773536683::0::1::::<><><>0<>0<><>::uid://b1asgfqeqtrs1::::res://src/OpponentPaddle/opponent_paddle.gd<>uid://ci6l5ukg08wsd::::res://assets/img/paddles/redPaddle.png
+::res://src/::1773708594
+::res://src/Ball/::1773708899
+ball.gd::GDScript::3720838115269645986::1773587299::0::1::::<>CharacterBody2D<><>0<>0<><>::
+ball.tscn::PackedScene::4103423874517453402::1773708899::0::1::::<><><>0<>0<><>::uid://digxy0357ebw6::::res://assets/img/balls/greenBall.png<>uid://btanwpebfl8n3::::res://src/Ball/ball.gd
+::res://src/Game/::1773598963
+game.gd::GDScript::2351451341549651599::1773598675::0::1::::<>Node2D<><>0<>0<><>::
+game.tscn::PackedScene::9022346639144697819::1773598963::0::1::::<><><>0<>0<><>::uid://8rccbn761456::::res://src/Game/game.gd<>uid://df2l777lq37gc::::res://src/PlayerPaddle/player_paddle.tscn<>uid://b5tnwylymuw2j::::res://assets/img/back/minimalistic-blue-windows-7-screen-y1f3lbswydb71soy.jpg<>uid://b865g8y23wk1f::::res://assets/fonts/segoe-ui-4-cufonfonts/Segoe UI.ttf<>uid://bypy16g2j74la::::res://src/Ball/ball.tscn<>uid://dwlbha5h1wphh::::res://assets/sounds/Windows Hardware Insert.wav<>uid://b7yishcumq6xb::::res://assets/img/6gfz2t.png<>uid://psw1xttow7wc::::res://assets/sounds/Windows Hardware Remove.wav<>uid://bea7og8d5vaeu::::res://assets/sounds/Windows Ding.wav<>uid://dh1w0c3kquduj::::res://assets/sounds/Windows Error.wav<>uid://b7310do7rq7ak::::res://assets/sounds/Windows Critical Stop.wav
+::res://src/Menu/::1773708699
+menu.tscn::PackedScene::1117643572058350134::1773708699::0::1::::<><><>0<>0<><>::
+::res://src/OpponentPaddle/::1773598968
 opponent_paddle.gd::GDScript::4212434526452680282::1773536683::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://src/PlayerPaddle/::1773535807
-player_paddle.gd::GDScript::9133799274886753780::1773535807::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player_paddle.tscn::PackedScene::7566671231657721486::1773531653::0::1::::<><><>0<>0<><>::uid://d3eqlstl3hqim::::res://src/PlayerPaddle/player_paddle.gd<>uid://bvlnnvcpb07ja::::res://assets/img/paddles/cyanPaddle.png
+opponent_paddle.tscn::PackedScene::6264359933176973933::1773598968::0::1::::<><><>0<>0<><>::uid://b1asgfqeqtrs1::::res://src/OpponentPaddle/opponent_paddle.gd<>uid://ci6l5ukg08wsd::::res://assets/img/paddles/redPaddle.png
+::res://src/Player2Paddle/::1773598970
+player_2_paddle.gd::GDScript::4362359986924628482::1773587724::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player_2_paddle.tscn::PackedScene::2204994180084163306::1773598970::0::1::::<><><>0<>0<><>::uid://bvlnnvcpb07ja::::res://assets/img/paddles/cyanPaddle.png<>uid://b3ffow8atevew::::res://src/Player2Paddle/player_2_paddle.gd
+::res://src/PlayerPaddle/::1773598634
+player_paddle.gd::GDScript::9133799274886753780::1773598573::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player_paddle.tscn::PackedScene::7566671231657721486::1773598634::0::1::::<><><>0<>0<><>::uid://d3eqlstl3hqim::::res://src/PlayerPaddle/player_paddle.gd<>uid://bvlnnvcpb07ja::::res://assets/img/paddles/cyanPaddle.png

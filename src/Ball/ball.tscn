@@ -4,14 +4,15 @@
 [ext_resource type="Script" uid="uid://btanwpebfl8n3" path="res://src/Ball/ball.gd" id="1_pv5fs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pv5fs"]
-radius = 16.0
+radius = 8.0
 
 [node name="Ball" type="CharacterBody2D" unique_id=951128980 groups=["BallGroup"]]
 script = ExtResource("1_pv5fs")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1781533110]
-scale = Vector2(0.053333335, 0.053333335)
+scale = Vector2(0.041001927, 0.040533334)
 texture = ExtResource("1_011rg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1328422186]
+scale = Vector2(1.5375723, 1.52)
 shape = SubResource("CircleShape2D_pv5fs")
