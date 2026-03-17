@@ -1,0 +1,228 @@
+[gd_scene format=3 uid="uid://p6noq37g8du1"]
+
+[ext_resource type="Theme" uid="uid://dr4hm86sugbmt" path="res://assets/Glassmorphism/Themes/glassmorphism.tres" id="1_l7njj"]
+[ext_resource type="Texture2D" uid="uid://dpibtfo4w8qrw" path="res://assets/img/POnG-17-3-2026.png" id="1_vbyo6"]
+[ext_resource type="Script" uid="uid://dgubebflsgx3o" path="res://src/Menu/menu.gd" id="2_6uy04"]
+[ext_resource type="Texture2D" uid="uid://gc1sn25pyg76" path="res://assets/img/back-menu.jpg" id="2_l7njj"]
+[ext_resource type="Texture2D" uid="uid://bvnj2nuw6dlmi" path="res://assets/img/PC.png" id="4_oh1tp"]
+[ext_resource type="Texture2D" uid="uid://cosqxtejx38q6" path="res://assets/img/Diseño sin título(1).png" id="5_6uy04"]
+[ext_resource type="Texture2D" uid="uid://doc334unss8xl" path="res://assets/img/msn-icon-30.png" id="6_38o4b"]
+
+[node name="Menu" type="Control" unique_id=789190420]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_l7njj")
+script = ExtResource("2_6uy04")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=722635628]
+modulate = Color(0.73646706, 0.8479318, 0.9084153, 1)
+layout_mode = 0
+offset_right = 1154.5005
+offset_bottom = 792.0
+texture = ExtResource("2_l7njj")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=218408753]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 32.0
+offset_right = 750.40015
+offset_bottom = 196.25
+texture = ExtResource("1_vbyo6")
+expand_mode = 1
+
+[node name="PvM" type="Button" parent="." unique_id=281272479]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 256.0
+offset_right = 704.0
+offset_bottom = 320.0
+text = "VS"
+
+[node name="TextureRect" type="TextureRect" parent="PvM" unique_id=645350613]
+layout_mode = 0
+offset_left = 152.0
+offset_right = 208.0
+offset_bottom = 56.0
+texture = ExtResource("4_oh1tp")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="PvM" unique_id=2027373265]
+layout_mode = 0
+offset_left = 32.000015
+offset_right = 117.33336
+offset_bottom = 64.0
+texture = ExtResource("5_6uy04")
+expand_mode = 1
+
+[node name="PvP" type="Button" parent="." unique_id=453212621]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 352.0
+offset_right = 704.0
+offset_bottom = 416.0
+
+[node name="TextureRect2" type="TextureRect" parent="PvP" unique_id=641203639]
+layout_mode = 0
+offset_left = 88.000015
+offset_right = 173.33336
+offset_bottom = 64.0
+texture = ExtResource("6_38o4b")
+expand_mode = 1
+
+[node name="Config" type="Button" parent="." unique_id=1746988177]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 448.0
+offset_right = 704.0
+offset_bottom = 512.0
+text = "Configuracion"
+
+[node name="Config-panel" type="Panel" parent="." unique_id=1797261555]
+visible = false
+layout_mode = 0
+offset_left = 720.0
+offset_top = 432.0
+offset_right = 952.0
+offset_bottom = 616.0
+
+[node name="AguaCheck" type="CheckButton" parent="Config-panel" unique_id=1415014500]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 216.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_focus_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+text = "Agua"
+alignment = 1
+
+[node name="SonidoCheck" type="CheckButton" parent="Config-panel" unique_id=76522478]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 72.0
+offset_right = 216.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_focus_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+button_pressed = true
+text = "Sonido"
+alignment = 1
+
+[node name="ColorLeft" type="OptionButton" parent="Config-panel" unique_id=2059024749]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 128.0
+offset_right = 104.0
+offset_bottom = 168.0
+theme_override_colors/font_color = Color(0.14646932, 0.14646932, 0.14646932, 1)
+theme_override_colors/font_focus_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_font_sizes/font_size = 15
+alignment = 1
+selected = 0
+fit_to_longest_item = false
+item_count = 7
+popup/item_0/text = "Color Izq"
+popup/item_0/id = 0
+popup/item_0/separator = true
+popup/item_1/text = "Azul"
+popup/item_1/id = 1
+popup/item_2/text = "Celeste"
+popup/item_2/id = 2
+popup/item_3/text = "Verde"
+popup/item_3/id = 3
+popup/item_4/text = "Verdoso"
+popup/item_4/id = 4
+popup/item_5/text = "Rojo"
+popup/item_5/id = 5
+popup/item_6/text = "Violeta"
+popup/item_6/id = 6
+
+[node name="ColorRight" type="OptionButton" parent="Config-panel" unique_id=1656874319]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 216.0
+offset_bottom = 168.0
+theme_override_colors/font_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_focus_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
+theme_override_font_sizes/font_size = 15
+alignment = 1
+selected = 0
+fit_to_longest_item = false
+item_count = 7
+popup/item_0/text = "Color Der"
+popup/item_0/id = 0
+popup/item_0/separator = true
+popup/item_1/text = "Azul"
+popup/item_1/id = 1
+popup/item_2/text = "Celeste"
+popup/item_2/id = 2
+popup/item_3/text = "Verde"
+popup/item_3/id = 3
+popup/item_4/text = "Verdoso"
+popup/item_4/id = 4
+popup/item_5/text = "Rojo"
+popup/item_5/id = 5
+popup/item_6/text = "Violeta"
+popup/item_6/id = 6
+
+[node name="Creditos" type="Button" parent="." unique_id=851434601]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 576.0
+offset_right = 144.0
+offset_bottom = 624.0
+text = "Creditos"
+
+[node name="Cred-panel" type="Panel" parent="." unique_id=1720204986]
+visible = false
+layout_mode = 0
+offset_left = 152.0
+offset_top = 360.0
+offset_right = 336.0
+offset_bottom = 624.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Cred-panel" unique_id=314929400]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 184.0
+offset_bottom = 256.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 10
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/italics_font_size = 10
+text = "Creado por: Nicolas Stchigel
+
+Creditos:
+	Godot UI Glass - binbun
+	Glassmorphism - AudaciousGabe
+	Windows 7 - Microsoft
+	Glass Font - Textstudio
+	Edicion - Canva
+
+Diseñado en: Godot
+
+El nombre del juego viene de la palabra POG, muy usada online y en Twitch. El juego originalmente iba a estar relacionado con eso, pero termino saliendo este juego inspirado en la estetica de Windows 7 o 'frutiger aero'"
+
+[connection signal="pressed" from="PvM" to="." method="_on_pv_m_pressed"]
+[connection signal="pressed" from="PvP" to="." method="_on_pv_p_pressed"]
+[connection signal="pressed" from="Config" to="." method="_on_config_pressed"]
+[connection signal="pressed" from="Creditos" to="." method="_on_creditos_pressed"]

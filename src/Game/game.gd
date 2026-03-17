@@ -2,6 +2,18 @@ extends Node2D
 
 var PScore = 0
 var EScore = 0
+var mode = false
+var agua = false
+var sonido = false
+var colorLeft = 0
+var colorRight = 0
+
+func _ready() -> void:
+	print(mode)
+	print(agua)
+	print(sonido)
+	print(colorLeft)
+	print(colorRight)
 
 func _on_player_goal_body_entered(body: Node2D) -> void:
 	EScore += 1
