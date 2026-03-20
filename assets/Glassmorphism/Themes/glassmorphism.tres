@@ -1,5 +1,8 @@
 [gd_resource type="Theme" format=3 uid="uid://dr4hm86sugbmt"]
 
+[ext_resource type="Texture2D" uid="uid://cxdxnbk1b0kc" path="res://assets/fonts/double-chevron-down-gray.svg" id="1_2ujqk"]
+[ext_resource type="Texture2D" uid="uid://drf2nu8vjrhi1" path="res://assets/fonts/double-chevron-up-gray.svg" id="2_qkvtj"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6iyv"]
 content_margin_left = 15.0
 content_margin_top = 15.0
@@ -487,21 +490,9 @@ corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5k4dk"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7d4hs"]
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sssy5"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5o6de"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hvpaq"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_017tk"]
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k7ld4"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_io1wf"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t35ie"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uha20"]
 
@@ -802,14 +793,14 @@ RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
 RichTextLabel/colors/selection_color = Color(1, 1, 1, 0.501961)
 RichTextLabel/styles/focus = SubResource("StyleBoxEmpty_r8b7o")
 ScrollContainer/styles/focus = SubResource("StyleBoxEmpty_5k4dk")
-SpinBox/icons/down = SubResource("CompressedTexture2D_7d4hs")
+SpinBox/icons/down = ExtResource("1_2ujqk")
 SpinBox/icons/down_disabled = SubResource("CompressedTexture2D_sssy5")
-SpinBox/icons/down_hover = SubResource("CompressedTexture2D_5o6de")
-SpinBox/icons/down_pressed = SubResource("CompressedTexture2D_hvpaq")
-SpinBox/icons/up = SubResource("CompressedTexture2D_017tk")
+SpinBox/icons/down_hover = ExtResource("1_2ujqk")
+SpinBox/icons/down_pressed = ExtResource("1_2ujqk")
+SpinBox/icons/up = ExtResource("2_qkvtj")
 SpinBox/icons/up_disabled = SubResource("CompressedTexture2D_k7ld4")
-SpinBox/icons/up_hover = SubResource("CompressedTexture2D_io1wf")
-SpinBox/icons/up_pressed = SubResource("CompressedTexture2D_t35ie")
+SpinBox/icons/up_hover = ExtResource("2_qkvtj")
+SpinBox/icons/up_pressed = ExtResource("2_qkvtj")
 TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
 TabContainer/colors/font_unselected_color = Color(1, 1, 1, 0.501961)
 TabContainer/constants/side_margin = 21

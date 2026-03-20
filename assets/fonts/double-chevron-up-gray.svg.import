@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csgri4xhe28tl"
-path="res://.godot/imported/fish.jpeg-b764af9c23445611ae25c29db4dc2822.ctex"
+uid="uid://drf2nu8vjrhi1"
+path="res://.godot/imported/double-chevron-up-gray.svg-df8d01e2308849102330d19c39e1b1ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/fish.jpeg"
-dest_files=["res://.godot/imported/fish.jpeg-b764af9c23445611ae25c29db4dc2822.ctex"]
+source_file="res://assets/fonts/double-chevron-up-gray.svg"
+dest_files=["res://.godot/imported/double-chevron-up-gray.svg-df8d01e2308849102330d19c39e1b1ae.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gc1sn25pyg76"
-path="res://.godot/imported/back-menu.jpg-0267bcfdc6a2eccd0b78a31f74677aa4.ctex"
+uid="uid://do3ovfeeui6fr"
+path="res://.godot/imported/podio-estirar.png-0b4b9288938b99778d39bbac18ec77a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/back-menu.jpg"
-dest_files=["res://.godot/imported/back-menu.jpg-0267bcfdc6a2eccd0b78a31f74677aa4.ctex"]
+source_file="res://assets/img/podio-estirar.png"
+dest_files=["res://.godot/imported/podio-estirar.png-0b4b9288938b99778d39bbac18ec77a8.ctex"]
 
 [params]
 

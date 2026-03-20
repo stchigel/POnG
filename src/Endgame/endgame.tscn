@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://x27ff57j2w17"]
+
+[ext_resource type="Script" uid="uid://43aadxifyqeu" path="res://src/Endgame/endgame.gd" id="1_eu113"]
+[ext_resource type="Texture2D" uid="uid://dejbxxj2rbd5x" path="res://assets/img/back/end/0x000000EA.png" id="2_15i6y"]
+[ext_resource type="Texture2D" uid="uid://do3ovfeeui6fr" path="res://assets/img/podio-estirar.png" id="3_dls62"]
+[ext_resource type="Texture2D" uid="uid://b2bpegb2c03e8" path="res://assets/img/podium-prodct-display-empty-background.png" id="4_p5qeq"]
+[ext_resource type="Theme" uid="uid://dr4hm86sugbmt" path="res://assets/Glassmorphism/Themes/glassmorphism.tres" id="5_37yea"]
+[ext_resource type="Texture2D" uid="uid://7iir6bt2v5qw" path="res://assets/img/paddles/bluePaddle.png" id="6_bobkj"]
+[ext_resource type="Texture2D" uid="uid://b4bbvnbemdbt5" path="res://assets/img/crown-icon-glass-3d-style-260nw-2638818227 - Editada.png" id="7_dyqvk"]
+
+[node name="Endgame" type="Control" unique_id=115918864]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eu113")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=805786437]
+modulate = Color(0.3515629, 0.3515629, 0.35156286, 1)
+layout_mode = 0
+offset_right = 1176.0
+offset_bottom = 648.0
+texture = ExtResource("2_15i6y")
+
+[node name="TextureRect6" type="TextureRect" parent="." unique_id=1099257453]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 536.0
+offset_right = 704.0
+offset_bottom = 680.0
+texture = ExtResource("3_dls62")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect6" unique_id=546328612]
+layout_mode = 0
+offset_top = -224.0
+offset_right = 255.94617
+offset_bottom = 8.0
+texture = ExtResource("4_p5qeq")
+expand_mode = 1
+
+[node name="Menu" type="Button" parent="." unique_id=827415029]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 512.0
+offset_right = 896.0
+offset_bottom = 576.0
+theme = ExtResource("5_37yea")
+text = "Menu"
+
+[node name="Revancha" type="Button" parent="." unique_id=394646214]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 512.0
+offset_right = 512.0
+offset_bottom = 576.0
+theme = ExtResource("5_37yea")
+text = "Revancha"
+
+[node name="PlayerLoose" type="TextureRect" parent="." unique_id=175240958]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 360.0
+offset_right = 672.0
+offset_bottom = 488.0
+texture = ExtResource("6_bobkj")
+expand_mode = 1
+
+[node name="PlayerWin" type="TextureRect" parent="." unique_id=456317801]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 192.0
+offset_right = 592.0
+offset_bottom = 432.0
+texture = ExtResource("6_bobkj")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=337938765]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 112.0
+offset_right = 628.76074
+offset_bottom = 237.7423
+rotation = 0.26299474
+texture = ExtResource("7_dyqvk")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=454834902]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 32.0
+offset_right = 704.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 35
+text = "Lorem Ipsum"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Revancha" to="." method="_on_revancha_pressed"]

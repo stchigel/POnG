@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://dr4hm86sugbmt" path="res://assets/Glassmorphism/Themes/glassmorphism.tres" id="1_l7njj"]
 [ext_resource type="Texture2D" uid="uid://dpibtfo4w8qrw" path="res://assets/img/POnG-17-3-2026.png" id="1_vbyo6"]
 [ext_resource type="Script" uid="uid://dgubebflsgx3o" path="res://src/Menu/menu.gd" id="2_6uy04"]
-[ext_resource type="Texture2D" uid="uid://gc1sn25pyg76" path="res://assets/img/back-menu.jpg" id="2_l7njj"]
+[ext_resource type="Texture2D" uid="uid://gc1sn25pyg76" path="res://assets/img/back/menu/back-menu.jpg" id="2_l7njj"]
 [ext_resource type="Texture2D" uid="uid://bvnj2nuw6dlmi" path="res://assets/img/PC.png" id="4_oh1tp"]
 [ext_resource type="Texture2D" uid="uid://cosqxtejx38q6" path="res://assets/img/Diseño sin título(1).png" id="5_6uy04"]
 [ext_resource type="Texture2D" uid="uid://doc334unss8xl" path="res://assets/img/msn-icon-30.png" id="6_38o4b"]
@@ -86,7 +86,7 @@ text = "Configuracion"
 visible = false
 layout_mode = 0
 offset_left = 720.0
-offset_top = 432.0
+offset_top = 392.0
 offset_right = 952.0
 offset_bottom = 616.0
 
@@ -123,7 +123,7 @@ alignment = 1
 layout_mode = 0
 offset_left = 16.0
 offset_top = 128.0
-offset_right = 104.0
+offset_right = 112.0
 offset_bottom = 168.0
 theme_override_colors/font_color = Color(0.14646932, 0.14646932, 0.14646932, 1)
 theme_override_colors/font_focus_color = Color(0.14509805, 0.14509805, 0.14509805, 1)
@@ -153,7 +153,7 @@ popup/item_6/id = 6
 
 [node name="ColorRight" type="OptionButton" parent="Config-panel" unique_id=1656874319]
 layout_mode = 0
-offset_left = 128.0
+offset_left = 120.0
 offset_top = 128.0
 offset_right = 216.0
 offset_bottom = 168.0
@@ -182,6 +182,20 @@ popup/item_5/text = "Rojo"
 popup/item_5/id = 5
 popup/item_6/text = "Violeta"
 popup/item_6/id = 6
+
+[node name="SpinBox" type="SpinBox" parent="Config-panel" unique_id=419679206]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 176.0
+offset_right = 216.0
+offset_bottom = 212.0
+tooltip_text = "Puntos para ganar"
+min_value = 1.0
+max_value = 15.0
+value = 1.0
+rounded = true
+alignment = 1
+update_on_text_changed = true
 
 [node name="Creditos" type="Button" parent="." unique_id=851434601]
 layout_mode = 0

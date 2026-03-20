@@ -12,6 +12,7 @@ func loadGame(mode):
 	scene.sonido = $"Config-panel/SonidoCheck".button_pressed
 	scene.colorLeft = $"Config-panel/ColorLeft".selected
 	scene.colorRight = $"Config-panel/ColorRight".selected
+	scene.PTS = $"Config-panel/SpinBox".value
 	get_tree().root.add_child(scene)
 	get_tree().current_scene.queue_free()
 	get_tree().current_scene = scene

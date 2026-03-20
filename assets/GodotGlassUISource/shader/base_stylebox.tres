@@ -12,6 +12,7 @@ corner_radius_top_left = 48
 corner_radius_top_right = 48
 corner_radius_bottom_right = 48
 corner_radius_bottom_left = 48
+corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.0980392)
 shadow_size = 48
 anti_aliasing_size = 0.01

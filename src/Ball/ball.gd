@@ -21,6 +21,9 @@ func _physics_process(delta):
 			$"../OtherHit".play()
 			speed += 10
 		velocity = velocity.bounce(collision_object.get_normal())
+	if isInWater: 
+		if speed-0.5>10: speed-=0.5 
+		else: speed=0.5
 
 func stop_ball():
 	speed = 0
@@ -29,3 +32,23 @@ func restart_ball():
 	speed = startSpeed
 	velocity.x = [-1,1] [randi() % 2]
 	velocity.y = [-0.8,0.8] [randi() % 2]
+
+
+func _on_agua_1_body_entered(body: Node2D) -> void:
+	isInWater=true
+
+func _on_agua_1_body_exited(body: Node2D) -> void:
+	isInWater=false
+
+func _on_agua_2_body_entered(body: Node2D) -> void:
+	isInWater=true
+
+func _on_agua_2_body_exited(body: Node2D) -> void:
+	isInWater=false
+
+func _on_agua_3_body_entered(body: Node2D) -> void:
+	isInWater=true
+
+func _on_agua_3_body_exited(body: Node2D) -> void:
+	isInWater=false
+	
