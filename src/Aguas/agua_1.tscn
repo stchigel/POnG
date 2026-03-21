@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://doq1gt6yrh1bh"]
+
+[ext_resource type="Shader" uid="uid://cp56g87sva5nt" path="res://assets/GodotGlassUISource/shader/glass_panel.gdshader" id="1_rncwy"]
+[ext_resource type="StyleBox" uid="uid://db8ltl18fdi1n" path="res://assets/GodotGlassUISource/shader/base_stylebox.tres" id="2_xc1g1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v010e"]
+shader = ExtResource("1_rncwy")
+shader_parameter/brightness = 0.1
+shader_parameter/chromatic_shift_amount = 0.2
+shader_parameter/bend_amount = 0.4
+shader_parameter/blur_amount = 1.0000000149012
+shader_parameter/grain_amount = 0.05
+shader_parameter/curve_light_blend = 0.5
+shader_parameter/rim_light_blend = 0.8
+shader_parameter/shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsbkf"]
+size = Vector2(96, 280)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdglr"]
+size = Vector2(48, 184)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wxbq"]
+size = Vector2(48, 184)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nxou2"]
+radius = 48.0
+
+[node name="Agua1" type="Area2D" unique_id=1331899742]
+
+[node name="Panel" type="Panel" parent="." unique_id=935413062]
+material = SubResource("ShaderMaterial_v010e")
+offset_left = 192.0
+offset_top = 320.0
+offset_right = 384.0
+offset_bottom = 600.0
+theme_override_styles/panel = ExtResource("2_xc1g1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1448496076]
+position = Vector2(288, 460)
+shape = SubResource("RectangleShape2D_qsbkf")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1799168437]
+position = Vector2(216, 460)
+shape = SubResource("RectangleShape2D_rdglr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1712700407]
+position = Vector2(360, 460)
+shape = SubResource("RectangleShape2D_5wxbq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=38306738]
+position = Vector2(240, 368)
+shape = SubResource("CircleShape2D_nxou2")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="." unique_id=591640196]
+position = Vector2(336, 368)
+shape = SubResource("CircleShape2D_nxou2")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=923201819]
+position = Vector2(240, 552)
+shape = SubResource("CircleShape2D_nxou2")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="." unique_id=522406107]
+position = Vector2(336, 552)
+shape = SubResource("CircleShape2D_nxou2")

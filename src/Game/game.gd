@@ -2,6 +2,9 @@ extends Node2D
 
 var EnemyScene = preload("res://src/OpponentPaddle/opponent_paddle.tscn")
 var Player2Scene = preload("res://src/Player2Paddle/player_2_paddle.tscn")
+var Agua1 = preload("res://src/Aguas/agua_1.tscn")
+var Agua2 = preload("res://src/Aguas/agua_2.tscn")
+var Agua3 = preload("res://src/Aguas/agua_3.tscn")
 
 var skins = [
 	"res://assets/img/paddles/bluePaddle.png",
@@ -37,10 +40,13 @@ func _ready():
 		player2.position = Vector2(1056, 320)
 		player2.get_node("Sprite2D").texture = load(skins[colorRight])
 		add_child(player2)
-	if !agua:
-		$Agua1.disable_mode=true
-		$Agua2.disable_mode=true
-		$Agua3.disable_mode=true
+	if agua:
+		var agua1 = Agua1.instantiate()
+		var agua2 = Agua2.instantiate()
+		var agua3 = Agua3.instantiate()
+		add_child(agua1)
+		add_child(agua2)
+		add_child(agua3)
 
 func _on_player_goal_body_entered(body: Node2D) -> void:
 	EScore += 1
